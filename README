@@ -3,5 +3,7 @@ OpensteamOrders
 
 Opensteam plugin for shipping-rates calculation
 
+Use the rake task "opensteam:plugins:shipping_rate:install" to copy migration files from the plugin to the rails-app
+
 
 Copyright (c) 2009 DiamondDogs Web Consoluting, released under GPL 

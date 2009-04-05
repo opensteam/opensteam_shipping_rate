@@ -21,3 +21,16 @@ Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_files.include('README')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
+
+namespace :opensteam do
+  namespace :plugins do
+    namespace :shipping_rate do
+
+      desc "install the shipping_rate plugin for opensteam (copy migration files..)"
+      task :install do
+        system "rsync -ruv vendor/plugins/opensteam_shipping_rate/db/migrate db"
+      end
+    end
+  end
+end
+
