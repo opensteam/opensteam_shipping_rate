@@ -5,7 +5,7 @@ namespace :opensteam do
 
       desc "install the shipping_rate plugin for opensteam (copy migration files..)"
       task :install do
-        system "rsync -ruv vendor/plugins/opensteam_shipping_rate/db/migrate db"
+        system "rsync -ruvp vendor/plugins/opensteam_shipping_rate/db/migrate db"
       end
     end
   end
